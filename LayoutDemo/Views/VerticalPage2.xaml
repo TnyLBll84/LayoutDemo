@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutDemo.VerticalPage2"
+             Title="VerticalPage2">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="20">
+            <Label Text="This is a VerticalStackLayout 2"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
+        
+            <Label Text="Line 1" Background="Aquamarine"/>
+            <Label Text="Line 2" Background="PaleGoldenrod"/>
+            <Label Text="Line 3" Background="RosyBrown"/>
+            <Label Text="Line 4" Background="Red"/>
+            <Label Text="Line 5" Background="Chocolate"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutDemo.AllinOne"
+             Title="AllinOne">
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- ================= STACK LAYOUTS ================= -->
+
+            <Label Text="VerticalStackLayout" FontSize="20" FontAttributes="Bold"/>
+
+            <VerticalStackLayout BackgroundColor="Beige" Padding="10">
+
+                <Button Text="Item 1"/>
+                <Button Text="Item 2"/>
+                <Button Text="Item 3"/>
+
+            </VerticalStackLayout>
+
+            <Label Text="HorizontalStackLayout" FontSize="20" FontAttributes="Bold"/>
+
+            <HorizontalStackLayout BackgroundColor="Beige" Padding="10" Spacing="10">
+
+                <Button Text="Left"/>
+                <Button Text="Center"/>
+                <Button Text="Right"/>
+
+            </HorizontalStackLayout>
+
+            <!-- ================= GRID ================= -->
+
+            <Label Text="Grid Layout" FontSize="20" FontAttributes="Bold"/>
+
+            <Grid 
+                BackgroundColor="Beige"
+                Padding="10"
+                RowDefinitions="Auto,Auto"
+                ColumnDefinitions="*,*">
+
+                <Button Text="A" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="B" Grid.Row="0" Grid.Column="1"/>
+                <Button Text="C" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="D" Grid.Row="1" Grid.Column="1"/>
+
+            </Grid>
+
+            <!-- ================= FLEX LAYOUT ================= -->
+
+            <Label Text="FlexLayout (Responsive)" FontSize="20" FontAttributes="Bold"/>
+
+            <FlexLayout 
+                BackgroundColor="Beige"
+                Padding="10"
+                Wrap="Wrap"
+                Direction="Row">
+
+                <Button Text="Box 1"/>
+                <Button Text="Box 2"/>
+                <Button Text="Box 3"/>
+                <Button Text="Box 4"/>
+                <Button Text="Box 5"/>
+                <Button Text="Box 3"/>
+                <Button Text="Box 4"/>
+                <Button Text="Box 5"/>
+
+            </FlexLayout>
+
+            <!-- ================= ABSOLUTE LAYOUT ================= -->
+
+            <Label Text="AbsoluteLayout" FontSize="20" FontAttributes="Bold"/>
+
+            <AbsoluteLayout 
+                BackgroundColor="Beige"
+                HeightRequest="200">
+
+                <Button 
+                    Text="Top Left"
+                    AbsoluteLayout.LayoutBounds="0,0,120,50"
+                    AbsoluteLayout.LayoutFlags="None"/>
+
+                <Button 
+                    Text="Center"
+                    AbsoluteLayout.LayoutBounds="0.5,0.5,120,50"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                <Button 
+                    Text="Bottom Right"
+                    AbsoluteLayout.LayoutBounds="1,1,140,50"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

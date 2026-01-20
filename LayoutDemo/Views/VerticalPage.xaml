@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutDemo.VerticalPage"
+             Title="VerticalPage">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label Text="This is a VerticalStackLayout"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
+
+            <BoxView Color="Violet"
+                 HeightRequest="100"
+                 WidthRequest="100"
+                 HorizontalOptions="Center"/>
+        
+            <BoxView Color="PaleVioletRed"
+                 HeightRequest="100"
+                 WidthRequest="100"
+                 HorizontalOptions="Center"/>
+
+            <BoxView Color="SaddleBrown"
+                 HeightRequest="100"
+                 WidthRequest="100"
+                 HorizontalOptions="Center"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

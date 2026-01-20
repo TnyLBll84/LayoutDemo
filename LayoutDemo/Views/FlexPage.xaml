@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutDemo.FlexPage"
+             Title="FlexPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="This is a FlexLayout"
+               FontSize="24"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20"/>
+            <FlexLayout Padding="5">
+        
+                <BoxView Color="BlanchedAlmond"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    VerticalOptions="Center" />
+                <BoxView Color="Coral"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <BoxView Color="DarkCyan"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+                <BoxView Color="DarkGoldenrod"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    VerticalOptions="Center"/>
+            </FlexLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

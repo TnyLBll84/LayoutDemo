@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LayoutDemo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LayoutDemo"
+    Title="LayoutDemo">
+    <TabBar x:Name="MyLayout">
+        <Tab Title="Vertical Layouts">
+
+            <ShellContent
+                Title="HorizontalStackLayout"
+                ContentTemplate="{DataTemplate local:HorizontalPage}"
+                Route="HorizontalPage" />
+            <ShellContent
+                Title="VerticalStackLayout"
+                ContentTemplate="{DataTemplate local:VerticalPage}"
+                Route="VerticalPage" />
+            <ShellContent
+                Title="VerticalStackLayout 2"
+                ContentTemplate="{DataTemplate local:VerticalPage2}"
+                Route="VerticalPage2" />
+            <ShellContent
+                Title="Add Name Entry"
+                ContentTemplate="{DataTemplate local:AddNameEntry}"
+                Route="AddNameEntry" />
+            <ShellContent
+                Title="Grid Layout"
+                ContentTemplate="{DataTemplate local:GridPage}"
+                Route="GridPage" />
+            <ShellContent
+                Title="Flex Layout"
+                ContentTemplate="{DataTemplate local:FlexPage}"
+                Route="FlexPage" />
+            <ShellContent
+                Title="Flex Layout 2"
+                ContentTemplate="{DataTemplate local:Flex2}"
+                Route="Flex2" />
+            <ShellContent
+                Title="Absolute Layout"
+                ContentTemplate="{DataTemplate local:AbsolutePage}"
+                Route="AbsolutePage" />
+            <ShellContent
+                Title="Absolute Layout 2"
+                ContentTemplate="{DataTemplate local:AbsolutePage2}"
+                Route="AbsolutePage1" />
+            <ShellContent
+                Title="All in One"
+                ContentTemplate="{DataTemplate local:AllinOne}"
+                Route="AllinOne" />
+        </Tab>
+    </TabBar>
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+</Shell>
